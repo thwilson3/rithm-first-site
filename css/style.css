@@ -1,0 +1,181 @@
+* {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: rgb(108, 43, 213);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: rgb(108, 43, 213);
+    transition-duration: .5s;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+/* header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+header {
+    width: 100%;
+}
+
+.nav {
+    background-color: black;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.wave {
+    display: flex;
+    align-items: flex-start;
+    width: 15px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .right-links {
+    background-color: black;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li {
+    background-color: black;
+    color: rgb(108, 43, 213);
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+ .landing h1 {
+    font-size: 60px;
+    color: black;
+    padding: 0px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: rgb(250, 251, 238);
+}
+
+.landing p {
+    color: white;
+    padding-top: 8px;
+}
+
+.about {
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about p {
+    width: 50vh;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: black;
+}
+
+.about img {
+    width: 30vh;
+    border-style: solid;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vh;
+    height: 70vh;
+    padding: 20px;
+}
+
+.contact h1 {
+    font-size: 50px;
+    border-style: solid;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.contact p {
+    padding-top: 15px;
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#button {
+    color: white;
+}
+
+#button:hover {
+    color: black;
+}
+
+footer {
+    background-color: black;
+    padding: 25px;
+    width: 100%;
+}
+
+footer ul {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer li {
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
