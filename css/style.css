@@ -20,11 +20,6 @@ a:hover{
     border-radius: 10px;
 }
 
-/* header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 header {
     width: 100%;
@@ -124,6 +119,13 @@ ul {
     border-style: solid;
     border-radius: 20px;
     margin-bottom: 10px;
+}
+
+.divider {
+    width: 80vh;
+    border-top: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 30px;
 }
 
 .contact {
