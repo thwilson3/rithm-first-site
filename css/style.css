@@ -34,15 +34,6 @@ header {
     width: 100%;
 }
 
-.wave {
-    display: flex;
-    align-items: flex-start;
-    width: 15px;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-
 .nav .right-links {
     background-color: black;
     font-size: larger;
@@ -81,6 +72,7 @@ ul {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    margin: 20px;
 }
 
  .landing h1 {
@@ -90,6 +82,7 @@ ul {
     border-style: solid;
     border-radius: 20px;
     background-color: rgb(250, 251, 238);
+    padding: 15px;
 }
 
 .landing p {
@@ -118,7 +111,7 @@ ul {
     width: 30vh;
     border-style: solid;
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .divider {
