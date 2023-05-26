@@ -43,76 +43,141 @@
   </header>
 
   <body>
-    <script src="<https://unpkg.com/typeit@8.7.1/dist/index.umd.js>"></script>
+    <div class="container main-container">
+      <div class="col justify-content-md-center">
+        <script src="<https://unpkg.com/typeit@8.7.1/dist/index.umd.js>"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new TypeIt("#intro", {
-          strings: ["Hi, I'm Tommy"],
-          waitUntilVisible: true,
-        }).go();
-      });
-    </script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            new TypeIt("#intro", {
+              strings: ["Hi, I'm Tommy"],
+              waitUntilVisible: true,
+            }).go();
+          });
+        </script>
 
-    <div class="landing">
-      <h1 id="intro"></h1>
-      <p>Aspiring software engineer from Houston, Texas.</p>
-    </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new TypeIt("#project-title", {
-          strings: ["Projects"],
-          waitUntilVisible: true,
-        }).go();
-      });
-    </script>
-    <h1 id="project-title"></h1>
-    <section>
-      <div class="projects">
-        <div id="project-1" class="project">
+        <div class="landing">
+          <h1 id="intro"></h1>
+          <p>Software engineer from Houston, Texas.</p>
         </div>
-        <div id="project-2" class="project">
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            new TypeIt("#project-title", {
+              strings: ["Projects"],
+              waitUntilVisible: true,
+            }).go();
+          });
+        </script>
+        <h1 class="container" id="project-title"></h1>
+        <div class="container">
+          <div class="row justify-content-center projects flex-nowrap">
+            <div id="project-1" class="card" style="width: 16rem">
+              <div class="col-12">
+                <img
+                  class="card-img-top"
+                  src="./static/jobly-example.png"
+                  alt="Jobly image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jobly</h5>
+                  <p class="card-text">
+                    Job search application built with Node.js, Express, and
+                    React.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="https://github.com/thwilson3/express-jobly"
+                    class="btn project-button"
+                    >GitHub Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="project-2" class="card" style="width: 16rem">
+              <div class="col-12">
+                <img
+                  class="card-img-top"
+                  src="./static/warbler-example.png"
+                  alt="Warbler image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Warbler</h5>
+                  <p class="card-text">
+                    Twitter social media clone built with Python and Flask.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    href="https://github.com/thwilson3/warbler"
+                    class="btn project-button"
+                    >GitHub Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="project-3" class="card" style="width: 16rem">
+              <img
+                class="card-img-top"
+                src="./static/pix.ly-example.png"
+                alt="pix.ly image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pix.ly</h5>
+                <p class="card-text">
+                  Image editing site that utilizes Python, React, and AWS S3.
+                </p>
+              </div>
+              <div class="card-body">
+                <a
+                  href="https://github.com/thwilson3/pix.ly"
+                  class="btn project-button"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="project-3" class="project">
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            new TypeIt("#about-title", {
+              strings: ["About"],
+              waitUntilVisible: true,
+            }).go();
+          });
+        </script>
+        <div class="about" id="about">
+          <h1 id="about-title"></h1>
+          <!-- <img src="./css/IMG_1232.JPG" /> -->
+          <p>
+            I'm a former touring musician and fashion designer interested in
+            expanding my creative skill set through coding. I've spent the
+            majority of my working life in the music industry working as both a
+            touring musician and tour manager. In recent years, I created my own
+            fashion label, teaching myself how to design, manufacture, style,
+            and develop my own unique garments.
+          </p>
+        </div>
+        <hr class="container divider" />
+        <div class="container contact" id="contact">
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              new TypeIt("#contact-title", {
+                strings: ["Contact"],
+                waitUntilVisible: true,
+              }).go();
+            });
+          </script>
+          <h1 id="contact-title"></h1>
+          <p>
+            Feel free to <br /><a
+              href="mailto:tommyhwilson3@gmail.com"
+              id="button"
+              >drop me a line</a
+            >
+          </p>
         </div>
       </div>
-    </section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new TypeIt("#about-title", {
-          strings: ["About"],
-          waitUntilVisible: true,
-        }).go();
-      });
-    </script>
-    <div class="about" id="about">
-      <h1 id="about-title"></h1>
-      <!-- <img src="./css/IMG_1232.JPG" /> -->
-      <p>
-        I'm a former touring musician and fashion designer interested in
-        expanding my creative skill set through coding. I've spent the majority
-        of my working life in the music industry working as both a touring
-        musician and tour manager. In recent years, I created my own fashion
-        label, teaching myself how to design, manufacture, style, and develop my
-        own unique garments.
-      </p>
-    </div>
-    <hr class="divider" />
-    <div class="contact" id="contact">
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          new TypeIt("#contact-title", {
-            strings: ["Contact"],
-            waitUntilVisible: true,
-          }).go();
-        });
-      </script>
-      <h1 id="contact-title"></h1>
-      <p>
-        Feel free to <br /><a href="mailto:tommyhwilson3@gmail.com" id="button"
-          >drop me a line</a
-        >
-      </p>
     </div>
   </body>
 
