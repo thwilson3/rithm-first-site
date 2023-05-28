@@ -204,7 +204,6 @@ ul {
 
 .card {
     background-color: rgb(13 13 14);
-    width: 100px;
     border-style: solid;
     border-radius: 20px;
     border-width: 4px;
@@ -387,3 +386,26 @@ footer ul {
     margin: 0;
     bottom: 3px;
 }
+
+
+@media (max-width: 767px) {
+    .about p {
+        width: 25rem;
+    }
+
+    .project-container {
+        width: 5rem;
+    }
+
+    .projects {
+      width: 40rem;
+    }
+
+    .contact {
+        width: revert;
+    }
+
+    .divider {
+        width: revert;
+    }
+  }
