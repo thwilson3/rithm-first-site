@@ -51,12 +51,14 @@ header {
 }
 
 .nav {
-    /* background-color: var(--off-white); */
+    background-color: var(--plum);
     /* align-items: flex-end; */
     display: flex;
     flex-direction: row;
+    padding: 30px;
     /* justify-content: center; */
     width: 100%;
+    filter: drop-shadow(0 0 0.75rem rgb(13 13 14));
 }
 
 .left-links {
@@ -74,8 +76,6 @@ header {
     display: flex;
     align-items: flex-end;
     flex-direction: row;
-    /* justify-content: space-around; */
-    padding: 15px;
     border-top-left-radius: 5px;
     margin: 0;
     position: absolute;
