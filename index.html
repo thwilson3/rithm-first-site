@@ -219,7 +219,7 @@
           <div class="contact-form" x-data="{ open: false }">
             <button class="btn btn-sm contact-btn" @click="open = ! open">
               Feel free to<br />
-              drop me a line
+              <span style="text-decoration: underline;">drop me a line</style>
             </button>
             <div x-show="open" @click.outside="open = false" x-transition>
               <form
