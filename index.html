@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <script src="./script.js" defer></script>
     <script
@@ -32,8 +33,25 @@
   <header>
     <nav class="navbar fixed-top bg-var(--plum) nav">
       <ul class="list-unstyled left-links">
+        <script>
+          function copyToClipboard(){
+            const icon = document.getElementsByClassName("bi bi-clipboard-data");
+
+            console.log(icon[0].classList);
+
+            icon[0].classList = "bi bi-clipboard-data-fill"
+
+            console.log(icon[0]);
+            return navigator.clipboard.writeText("hello@thwilson.io")
+          }
+        </script>
         <li>
-          {<span style="color: var(--lime)">work_status</span>: available}
+          {<span style="color: var(--lime)">email</span>: hello@thwilson3.io}
+          <!-- <button class="btn btn-sm email-btn"
+                  onclick="copyToClipboard()">
+                  <i class="bi bi-clipboard" style="display: inline;"></i>
+                  <i class="bi bi-check" style="display: hidden;"></i>
+          </button> -->
         </li>
       </ul>
       <ul class="list-unstyled right-links">
@@ -44,15 +62,15 @@
         </li>
         <li class="header-link">
           <span class="link-num"
-            >02:<a class="text-decoration-none" href="./pdf/Resume Jan 2023.pdf"
+            >02:<a class="text-decoration-none" href="./pdf/Resume.pdf"
               >Resume</a
             ></span
           >
         </li>
         <li class="header-link">
           <span class="link-num"
-            >03:<a class="text-decoration-none" href="#contact"
-              >Contact</a
+            >03:<a class="text-decoration-none" href="https://www.linkedin.com/in/thwilson3/"
+              >LinkedIn</a
             ></span
           >
         </li>
@@ -210,16 +228,18 @@
           <script>
             document.addEventListener("DOMContentLoaded", function () {
               new TypeIt("#contact-title", {
-                strings: ["Contact"],
+                strings: ["Thanks for your time!"],
                 waitUntilVisible: true,
               }).go();
             });
           </script>
           <h1 id="contact-title"></h1>
-          <div class="contact-form" x-data="{ open: false }">
+          <div>
+          </div>
+          <!-- <div class="contact-form" x-data="{ open: false }">
             <button class="btn btn-sm contact-btn" @click="open = ! open">
               Feel free to<br />
-              <span style="text-decoration: underline;">drop me a line</style>
+              <span>drop me a line</style>
             </button>
             <div x-show="open" @click.outside="open = false" x-transition>
               <form
@@ -255,7 +275,7 @@
                 <button class="btn btn-sm submit-btn">Submit</button>
               </form>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
