@@ -1,0 +1,28 @@
+{
+  "name": "rithm-first-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thwilson3/rithm-first-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thwilson3/rithm-first-site/issues"
+  },
+  "homepage": "https://github.com/thwilson3/rithm-first-site#readme",
+  "devDependencies": {
+    "git-scripts": "^0.6.4",
+    "surge": "^0.23.1"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain example-githooks.surge.sh"
+    }
+  }
+}
